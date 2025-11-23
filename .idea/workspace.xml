@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bcca741-7573-4ae5-8f7d-4ae65bffa4a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/integration-tests/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration-tests/src/test/java/AuthIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/integration-tests/src/test/java/PatientIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/localstack-deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/src/main/java/dev/parthagrawal/stack/LocalStack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -65,6 +66,7 @@
   "keyToString": {
     "Application.ApiGatewayApplication.executor": "Run",
     "Application.BillingServiceApplication.executor": "Run",
+    "Application.LocalStack.executor": "Run",
     "Application.PatientServiceApplication.executor": "Run",
     "Docker.analytics-service.executor": "Run",
     "Docker.api-gateway.executor": "Run",
@@ -90,10 +92,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHELLCHECK.PATH": "C:\\Users\\QSG\\AppData\\Roaming\\JetBrains\\IdeaIC2025.2\\plugins\\Shell Script\\shellcheck.exe",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/QSG/Downloads/patient-management/auth-service",
-    "onboarding.tips.debug.path": "C:/Users/QSG/Downloads/patient-management/integration-tests/src/main/java/dev/parthagrawal/Main.java",
+    "onboarding.tips.debug.path": "C:/Users/QSG/Downloads/patient-management/infrastructure/src/main/java/dev/parthagrawal/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -116,10 +119,23 @@
       <recent name="C:\Users\QSG\Downloads\patient-management\billing-service\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in integration-tests">
+  <component name="RunManager" selected="Application.LocalStack">
+    <configuration name="LocalStack" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="dev.parthagrawal.stack.LocalStack" />
+      <module name="infrastructure" />
+      <shortenClasspath name="ARGS_FILE" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/infrastructure" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in integration-tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="integration-tests" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -445,6 +461,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.LocalStack" />
       <item itemvalue="Docker.analytics-service" />
       <item itemvalue="Docker.api-gateway" />
       <item itemvalue="Docker.patient-service-db" />
